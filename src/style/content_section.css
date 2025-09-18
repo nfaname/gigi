@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Speeday Bold FFP";
+  src: url("../assets/Typo/Speeday/Speeday-Bold-FFP.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 p {
   font-family: "Neue Haas Grotesk Text Pro", bold;
   font-weight: bold;
@@ -15,7 +21,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 280vw;
+  height: 300vw;
 }
 
 .content-section div {
@@ -50,20 +56,29 @@ p {
 }
 
 .content-section > :nth-child(4) {
+  height: 200vw;
   position: absolute;
   z-index: 11;
   margin-top: 110vw;
   box-shadow: none;
   width: 100%;
 }
-.content-section > :nth-child(4) video {
+.content-section > :nth-child(4) > div {
+  position: sticky;
+  top: 0;
   width: 100%;
-  z-index: 11;
+  height: auto;
+}
+.content-section > :nth-child(4) > div video {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 .content-section > :nth-child(5) {
   margin: 187vw 0px 0px 60vw;
   z-index: 7;
 }
+
 .content-section > :nth-child(5) img {
   width: 28vw;
 }
@@ -103,8 +118,7 @@ p {
 .content-section > :nth-child(8) img {
   width: 30vw;
 }
-.product_description,
-.video_description {
+.product_description {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,16 +131,40 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
+.video_description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  width: 100%;
+  height: 7vw;
+  background-color: #977fce;
+}
+.video_description p:first-child {
+  padding-left: 4vw;
+  color: #d9d8d8;
+}
+.video_description p:last-child {
+  padding-right: 4vw;
+  color: #d9d8d8;
+}
+.video_description p:nth-child(3) {
+  color: #d9d8d8;
+}
+.video_description p {
+  font-size: 4vw;
+}
+.video_description p b {
+  font-family: "Speeday Bold FFP";
+  color: #d9d8d8;
+}
 .product_description p:nth-child(1) {
   padding-left: 10px;
 }
 .product_description p:nth-child(2) {
   padding-right: 10px;
 }
-.video_description {
-  height: 80px;
-}
+
 .scroll-box {
   height: 100vh; /* на весь экран */
   overflow-y: auto; /* отдельный вертикальный скролл */
@@ -147,8 +185,7 @@ p {
   .product_description {
     height: 40px;
   }
-  .content-section > :nth-child(1) {
-  }
+
   .content-section > :nth-child(1) img {
     width: 38vw;
   }
@@ -235,6 +272,7 @@ p {
     font-size: 2.5vw;
   }
   .content-section > :nth-child(4) {
+    height: 200vw;
     margin-top: 130vw;
     box-shadow: none;
   }
@@ -289,7 +327,7 @@ p {
   }
   .content-section {
     margin-top: 120px;
-    height: 390vw;
+    height: 430vw;
   }
 
   .product_description p:nth-child(1) {
@@ -325,7 +363,7 @@ p {
   }
 
   .content-section > :nth-child(5) p {
-    font-size: 1.8vw;
+    font-size: 2.2vw;
   }
   .content-section > :nth-child(6) {
     margin: 223vw 42vw 0px 0px;

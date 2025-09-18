@@ -12,10 +12,10 @@ function ContentSection() {
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -2000]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -1000]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, -500]);
-  const y4 = useTransform(scrollYProgress, [0.4, 1], [0, -1300]);
-  const y5 = useTransform(scrollYProgress, [0.7, 1], [0, -1100]);
-  const y6 = useTransform(scrollYProgress, [0.72, 1], [0, -800]);
-  const y7 = useTransform(scrollYProgress, [0.7, 1], [0, -500]);
+  const y4 = useTransform(scrollYProgress, [0.6, 1], [0, -1000]);
+  const y5 = useTransform(scrollYProgress, [0.6, 1], [0, -800]);
+  const y6 = useTransform(scrollYProgress, [0.6, 1], [0, -500]);
+  const y7 = useTransform(scrollYProgress, [0.6, 1], [0, -200]);
 
   return (
     <div className="content-section">
@@ -43,17 +43,34 @@ function ContentSection() {
         </div>
       </motion.div>
       <div>
-        {" "}
-        <video
-          src={video1}
-          autoPlay
-          muted
-          playsInline
-          loop
-          preload="auto"
-          className="video"
-        />
-        <div className="video_description"></div>
+        <div>
+          <video
+            src={video1}
+            autoPlay
+            muted
+            playsInline
+            loop
+            preload="auto"
+            className="video"
+          />
+          <div className="video_description">
+            <p> {">>>>> follow"}</p>
+            <p>
+              <b>GIGI</b>{" "}
+            </p>
+            <p>{"verse on"}</p>
+            <p>
+              <a
+                href="https://www.instagram.com/6i6iverse?igsh=MTY2cjBmd2VwcWlsZQ%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </p>
+            <p>{"<<<<<"}</p>
+          </div>
+        </div>{" "}
       </div>{" "}
       <motion.div style={{ y: y4 }}>
         {" "}

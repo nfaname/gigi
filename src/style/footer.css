@@ -1,6 +1,31 @@
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
   background-color: #977fce;
-  height: 20vw;
+  height: 20vh;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+footer a:first-child {
+  padding-left: 7vw;
+}
+footer a:last-child {
+  padding-right: 7vw;
+}
+footer img {
+  width: 4vw;
+}
+footer p:nth-child(2) {
+  padding-left: 20vw;
+}
+footer p:nth-child(3) {
+  padding-right: 20vw;
+}
+
+@media screen and (max-width: 650px) {
+  footer img {
+    width: 6vw;
+  }
 }
