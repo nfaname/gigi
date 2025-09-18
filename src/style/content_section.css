@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Neue Haas Grotesk Text Pro";
+  src: url("../assets/Typo/Neue_Haas_Grotesk_Text_Pro") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-family: "Neue Haas Grotesk Text Pro", bold;
+  font-weight: bold;
+  font-size: 1.6vw;
+}
+.content-section {
+  position: relative;
+  margin-top: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280vw;
+}
+
+.content-section div {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* мягкая тень */
+  position: absolute;
+}
+
+.content-section > :nth-child(1) {
+  margin: 0px 0px 0px 60vw;
+  z-index: 8;
+}
+.content-section > :nth-child(1) img {
+  width: 33vw;
+}
+
+.content-section > :nth-child(2) {
+  margin: 10vw 40vw 0px 0px;
+  z-index: 10;
+}
+.content-section > :nth-child(2) img {
+  width: 30vw;
+}
+.content-section > :nth-child(3) {
+  margin: 45vw 0px 0px 25vw;
+  z-index: 9;
+}
+.content-section > :nth-child(3) img {
+  width: 40vw;
+}
+.content-section > :nth-child(3) p {
+  font-size: 2vw;
+}
+
+.content-section > :nth-child(4) {
+  position: absolute;
+  z-index: 11;
+  margin-top: 110vw;
+  box-shadow: none;
+  width: 100%;
+}
+.content-section > :nth-child(4) video {
+  width: 100%;
+  z-index: 11;
+}
+.content-section > :nth-child(5) {
+  margin: 187vw 0px 0px 60vw;
+  z-index: 7;
+}
+.content-section > :nth-child(5) img {
+  width: 28vw;
+}
+.content-section > :nth-child(5) p {
+  font-size: 1.3vw;
+}
+
+.content-section > :nth-child(6) {
+  margin: 195vw 50vw 0px 0px;
+
+  z-index: 8;
+}
+.content-section > :nth-child(6) img {
+  width: 43vw;
+}
+.content-section > :nth-child(6) p {
+  font-size: 1.9vw;
+}
+
+.content-section > :nth-child(7) {
+  margin: 230vw 0px 0px 35vw;
+  z-index: 9;
+}
+.content-section > :nth-child(7) p {
+  font-size: 2.2vw;
+}
+
+.content-section > :nth-child(7) img {
+  width: 47vw;
+}
+.content-section > :nth-child(8) {
+  margin: 267vw 23vw 0px 0px;
+
+  z-index: 1;
+}
+
+.content-section > :nth-child(8) img {
+  width: 30vw;
+}
+.product_description,
+.video_description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 100%;
+  height: 4vw;
+  background-color: #977fce;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.product_description p:nth-child(1) {
+  padding-left: 10px;
+}
+.product_description p:nth-child(2) {
+  padding-right: 10px;
+}
+.video_description {
+  height: 80px;
+}
+.scroll-box {
+  height: 100vh; /* на весь экран */
+  overflow-y: auto; /* отдельный вертикальный скролл */
+  overscroll-behavior: contain; /* чтобы не "проталкивало" основной скролл */
+}
+
+@media screen and (max-width: 950px) {
+  p {
+    font-family: "Neue Haas Grotesk Text Pro", bold;
+    font-weight: bold;
+    font-size: 1.8vw;
+  }
+  .content-section {
+    margin-top: 180px;
+    height: 330vw;
+  }
+
+  .product_description {
+    height: 40px;
+  }
+  .content-section > :nth-child(1) {
+  }
+  .content-section > :nth-child(1) img {
+    width: 38vw;
+  }
+
+  .content-section > :nth-child(2) {
+    margin: 8vw 40vw 0px 0px;
+  }
+  .content-section > :nth-child(2) img {
+    width: 35vw;
+  }
+  .content-section > :nth-child(3) {
+    margin: 47vw 0px 0px 25vw;
+  }
+  .content-section > :nth-child(3) img {
+    width: 45vw;
+  }
+  .content-section > :nth-child(4) {
+    margin-top: 115vw;
+    box-shadow: none;
+  }
+
+  .content-section > :nth-child(5) {
+    margin: 187vw 0px 0px 57vw;
+  }
+  .content-section > :nth-child(5) p {
+    font-size: 1.5vw;
+  }
+  .content-section > :nth-child(5) img {
+    width: 33vw;
+  }
+
+  .content-section > :nth-child(6) {
+    margin: 195vw 47vw 0px 0px;
+  }
+  .content-section > :nth-child(6) img {
+    width: 48vw;
+  }
+
+  .content-section > :nth-child(7) {
+    margin: 236vw 0px 0px 40vw;
+  }
+  .content-section > :nth-child(7) img {
+    width: 47vw;
+  }
+  .content-section > :nth-child(8) {
+    margin: 264vw 23vw 0px 0px;
+  }
+
+  .content-section > :nth-child(8) img {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  p {
+    font-family: "Neue Haas Grotesk Text Pro", bold;
+    font-weight: bold;
+    font-size: 2.05vw;
+  }
+  .content-section {
+    margin-top: 150px;
+    height: 355vw;
+  }
+
+  .content-section > :nth-child(1) {
+    margin: 0px 0px 0px 50vw;
+  }
+  .content-section > :nth-child(1) img {
+    width: 43vw;
+  }
+
+  .content-section > :nth-child(2) {
+    margin: 8vw 50vw 0px 0px;
+  }
+  .content-section > :nth-child(2) img {
+    width: 40vw;
+  }
+  .content-section > :nth-child(3) {
+    margin: 54vw 0px 0px 25vw;
+  }
+  .content-section > :nth-child(3) img {
+    width: 50vw;
+  }
+  .content-section > :nth-child(3) p {
+    font-size: 2.5vw;
+  }
+  .content-section > :nth-child(4) {
+    margin-top: 130vw;
+    box-shadow: none;
+  }
+  .video_description {
+    height: 50px;
+  }
+  .content-section > :nth-child(5) {
+    margin: 201vw 0px 0px 53vw;
+  }
+
+  .content-section > :nth-child(5) img {
+    width: 38vw;
+  }
+
+  .content-section > :nth-child(5) p {
+    font-size: 1.8vw;
+  }
+  .content-section > :nth-child(6) {
+    margin: 210vw 42vw 0px 0px;
+  }
+  .content-section > :nth-child(6) img {
+    width: 53vw;
+  }
+  .content-section > :nth-child(6) p {
+    font-size: 2.6vw;
+  }
+
+  .content-section > :nth-child(7) {
+    margin: 257vw 0px 0px 40vw;
+  }
+  .content-section > :nth-child(7) img {
+    width: 55vw;
+  }
+  .content-section > :nth-child(7) p {
+    font-size: 2.9vw;
+  }
+
+  .content-section > :nth-child(8) {
+    margin: 290vw 30vw 0px 0px;
+  }
+
+  .content-section > :nth-child(8) img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  p {
+    font-family: "Neue Haas Grotesk Text Pro", bold;
+    font-weight: bold;
+    font-size: 2.4vw;
+  }
+  .content-section {
+    margin-top: 120px;
+    height: 390vw;
+  }
+
+  .product_description p:nth-child(1) {
+    padding-left: 5px;
+  }
+  .product_description p:nth-child(2) {
+    padding-right: 5px;
+  }
+  .content-section > :nth-child(1) {
+    margin: 0px 0px 0px 45vw;
+  }
+
+  .content-section > :nth-child(2) {
+    margin: 8vw 50vw 0px 0px;
+  }
+
+  .content-section > :nth-child(3) {
+    margin: 60vw 0px 0px 25vw;
+  }
+
+  .content-section > :nth-child(3) p {
+    font-size: 2.8vw;
+  }
+  .content-section > :nth-child(4) {
+    margin-top: 140vw;
+    box-shadow: none;
+  }
+  .video_description {
+    height: 50px;
+  }
+  .content-section > :nth-child(5) {
+    margin: 214vw 0px 0px 53vw;
+  }
+
+  .content-section > :nth-child(5) p {
+    font-size: 1.8vw;
+  }
+  .content-section > :nth-child(6) {
+    margin: 223vw 42vw 0px 0px;
+  }
+
+  .content-section > :nth-child(6) p {
+    font-size: 2.6vw;
+  }
+
+  .content-section > :nth-child(7) {
+    margin: 274vw 0px 0px 40vw;
+  }
+
+  .content-section > :nth-child(7) p {
+    font-size: 2.9vw;
+  }
+
+  .content-section > :nth-child(8) {
+    margin: 315vw 30vw 0px 0px;
+  }
+}
