@@ -1,6 +1,6 @@
-import "./style/footer.css";
-import inst from "./assets/Icons & Logo/Icon_IG.png";
-import indeed from "./assets/Icons & Logo/Icon_In.png";
+import "../style/footer.css";
+import inst from "../assets/Icons & Logo/Icon_IG.png";
+import indeed from "../assets/Icons & Logo/Icon_In.png";
 
 function Footer() {
   return (
@@ -11,8 +11,8 @@ function Footer() {
       >
         <img src={inst} alt="instagram" />
       </a>
-      <p>imprint</p>
-      <p>privacy police</p>
+      <a href="#">imprint</a>
+      <a href="#">privacy police</a>
       <a
         href="https://www.indeed.com/cmp/G&R-Kreativ-Gmbh?from=msg"
         rel="noopener noreferrer"

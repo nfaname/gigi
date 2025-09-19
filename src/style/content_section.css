@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Neue Haas Grotesk Text Pro";
-  src: url("../assets/Typo/Neue_Haas_Grotesk_Text_Pro") format("truetype");
+  src: url("../assets/Typo/Grotesk/31862445252.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
   font-style: normal;
 }
 p {
-  font-family: "Neue Haas Grotesk Text Pro", bold;
+  font-family: "Neue Haas Grotesk Text Pro";
   font-weight: bold;
   font-size: 1.6vw;
 }
@@ -25,7 +25,7 @@ p {
 }
 
 .content-section div {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* мягкая тень */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
 }
 
@@ -166,15 +166,13 @@ p {
 }
 
 .scroll-box {
-  height: 100vh; /* на весь экран */
-  overflow-y: auto; /* отдельный вертикальный скролл */
-  overscroll-behavior: contain; /* чтобы не "проталкивало" основной скролл */
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 @media screen and (max-width: 950px) {
   p {
-    font-family: "Neue Haas Grotesk Text Pro", bold;
-    font-weight: bold;
     font-size: 1.8vw;
   }
   .content-section {
@@ -239,11 +237,6 @@ p {
   }
 }
 @media screen and (max-width: 650px) {
-  p {
-    font-family: "Neue Haas Grotesk Text Pro", bold;
-    font-weight: bold;
-    font-size: 2.05vw;
-  }
   .content-section {
     margin-top: 150px;
     height: 355vw;
@@ -321,8 +314,6 @@ p {
 
 @media screen and (max-width: 450px) {
   p {
-    font-family: "Neue Haas Grotesk Text Pro", bold;
-    font-weight: bold;
     font-size: 2.4vw;
   }
   .content-section {

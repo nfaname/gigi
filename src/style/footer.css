@@ -1,4 +1,16 @@
+@font-face {
+  font-family: "Neue Haas Grotesk Text Pro";
+  src: url("../assets/Typo/Grotesk/31862445252.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+footer a {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-weight: bold;
+  font-size: 2vw;
+}
 footer {
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,15 +29,24 @@ footer a:last-child {
 footer img {
   width: 4vw;
 }
-footer p:nth-child(2) {
+footer a:nth-child(2) {
   padding-left: 20vw;
 }
-footer p:nth-child(3) {
+footer a:nth-child(3) {
   padding-right: 20vw;
 }
 
 @media screen and (max-width: 650px) {
   footer img {
     width: 6vw;
+  }
+  footer a {
+    font-size: 3vw;
+  }
+  footer a:nth-child(2) {
+    padding-left: 10vw;
+  }
+  footer a:nth-child(3) {
+    padding-right: 10vw;
   }
 }
